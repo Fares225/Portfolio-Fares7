@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Fares Ayman — Mobile App Developer & Web Developer. Building modern, responsive, and user-friendly digital experiences with HTML, CSS, JavaScript, and mobile technologies.">
+  <meta name="author" content="Fares Ayman">
+  <meta name="keywords" content="Fares Ayman, Mobile App Developer, Web Developer, HTML, CSS, JavaScript, Portfolio">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Fares Ayman — Portfolio | Mobile App & Web Developer">
+  <meta property="og:description"
+    content="Passionate Mobile App Developer and Web Developer creating modern, responsive, and user-friendly digital experiences.">
+
+  <title>Portfolio | Fares💻</title>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="assets/favicon.jpg">
+  <link rel="apple-touch-icon" href="assets/favicon.jpg">
+</head>
+
+<body>
+
+  <!-- ========================================================================
+       Navigation Bar
+       ======================================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="brand" aria-label="FaresHomepage">
+        <div class="brand-icon">FA</div>
+        <div class="brand-text">
+          Fares
+          <span>Developer</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#services" class="nav-link">What I Do</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#testimonials" class="nav-link">Testimonials</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Nav CTA -->
+      <div class="nav-cta">
+        <a href="https://wa.me/2010406060311" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm"
+          id="navWhatsAppBtn">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+            </path>
+          </svg>
+          Let's Talk
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle mobile menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <nav class="mobile-nav-links">
+        <a href="#about" class="mobile-nav-link">👨‍💻 About Me</a>
+        <a href="#services" class="mobile-nav-link">💼 What I Do</a>
+        <a href="#skills" class="mobile-nav-link">🛠️ My Skills</a>
+        <a href="#projects" class="mobile-nav-link">🚀 Selected Work</a>
+        <a href="#testimonials" class="mobile-nav-link">💬 Testimonials</a>
+        <a href="#contact" class="mobile-nav-link">📞 Contact Me</a>
+      </nav>
+      <a href="https://wa.me/2010406060311" target="_blank" rel="noopener noreferrer"
+        class="btn btn-whatsapp btn-block">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path
+            d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+          </path>
+        </svg>
+        Chat on WhatsApp
+      </a>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       Hero Section
+       ======================================================================== -->
+  <section class="hero-section" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <!-- Hero Left Column -->
+        <div class="hero-content">
+          <div class="hero-welcome-badge">
+            <span class="pulse-dot"></span>
+            👋 Welcome to My Portfolio
+          </div>
+
+          <h1 class="hero-title">
+            Fares Ayman
+          </h1>
+
+          <div class="hero-subtitle">
+            <span class="role-badge">Mobile App Developer</span>
+            <span>&</span>
+            <span class="role-badge">Web Developer</span>
+          </div>
+
+          <p class="hero-bio">
+            I am Fares Ayman, a passionate Mobile App Developer and Web Developer who enjoys building modern,
+            responsive, and user-friendly digital experiences. I work with HTML, CSS, and JavaScript, and I am
+            continuously developing my skills in Mobile App Development and Web Development.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary" id="heroViewWorkBtn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+              View My Work
+            </a>
+            <a href="#contact" class="btn btn-secondary" id="heroContactBtn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              Contact Me
+            </a>
+          </div>
+
+          <!-- Technologies Bar -->
+          <div class="hero-tech-row">
+            <span class="tech-label">Stack</span>
+            <div class="tech-badges">
+              <span class="tech-badge">HTML</span>
+              <span class="tech-badge">CSS</span>
+              <span class="tech-badge">JavaScript</span>
+              <span class="tech-badge">Mobile App</span>
+              <span class="tech-badge">Web Dev</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Right Column: Calm Visual Mockup -->
+        <div class="hero-visual">
+          <div class="showcase-stage">
+            <!-- Browser Mockup -->
+            <div class="mockup-browser">
+              <div class="browser-bar">
+                <div class="browser-dot dot-red"></div>
+                <div class="browser-dot dot-yellow"></div>
+                <div class="browser-dot dot-green"></div>
+                <div class="browser-url">fares-ayman.dev/web</div>
+              </div>
+              <div class="browser-content">
+                <div class="code-line"><span class="c-purple">const</span> <span class="c-blue">developer</span> = {
+                </div>
+                <div class="code-line">&nbsp;&nbsp;<span class="c-yellow">name</span>: <span class="c-green">'Fares
+                    Ayman'</span>,</div>
+                <div class="code-line">&nbsp;&nbsp;<span class="c-yellow">focus</span>: [<span
+                    class="c-green">'Mobile'</span>, <span class="c-green">'Web'</span>],</div>
+                <div class="code-line">&nbsp;&nbsp;<span class="c-yellow">passion</span>: <span class="c-green">'Clean
+                    UX & Performance'</span></div>
+                <div class="code-line">};</div>
+                <div class="code-line"><span class="c-gray">// Building intuitive user experiences</span></div>
+              </div>
+            </div>
+
+            <!-- Mobile Phone Mockup -->
+            <div class="mockup-phone">
+              <div class="phone-speaker"></div>
+              <div class="phone-screen">
+                <div class="screen-app-bar">
+                  <div class="app-pill"></div>
+                  <div class="screen-bar w-40"></div>
+                </div>
+                <div class="screen-card-1">
+                  <div class="screen-bar w-70"></div>
+                  <div class="screen-bar w-90"></div>
+                </div>
+                <div class="screen-card-2">
+                  <div class="screen-bar w-60"></div>
+                  <div class="screen-bar w-40"></div>
+                </div>
+                <div class="screen-action-btn">
+                  Explore App UI
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Subtle Badges -->
+            <div class="floating-chip chip-1">
+              <span>📱 Mobile First</span>
+            </div>
+            <div class="floating-chip chip-2">
+              <span>🌐 Clean Web</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       About Me Section
+       ======================================================================== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">👨‍💻 About Me</div>
+        <h2 class="section-title">Dedicated to Building Intuitive Digital Solutions</h2>
+        <p class="section-desc">Get to know who I am, my philosophy as a developer, and what drives my work.</p>
+      </div>
+
+      <div class="about-grid">
+        <!-- Story Card -->
+        <div class="glass-card about-card-left">
+          <p class="about-text">
+            I'm <strong>Fares Ayman</strong>, a passionate developer specializing in <strong>Mobile App
+              Development</strong> and <strong>Web Development</strong>.
+          </p>
+          <p class="about-text">
+            I enjoy creating modern, responsive, and user-friendly applications and websites. I have experience writing
+            code using <strong>HTML, CSS, and JavaScript</strong>, and I am always working on improving my programming
+            skills and learning new technologies.
+          </p>
+
+          <div class="about-goals-card">
+            <div class="about-goals-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              My Core Goal
+            </div>
+            <p class="about-goals-desc">
+              My goal is to build useful digital products, solve problems through programming, and continue growing as a
+              professional developer.
+            </p>
+          </div>
+        </div>
+
+        <!-- Highlights Grid -->
+        <div class="about-highlights">
+          <div class="glass-card highlight-box">
+            <div class="highlight-icon">📱</div>
+            <h3 class="highlight-title">Mobile App Focus</h3>
+            <p class="highlight-desc">Developing modern mobile experiences focused on usability, clean navigation, and
+              efficiency.</p>
+          </div>
+
+          <div class="glass-card highlight-box">
+            <div class="highlight-icon">🌐</div>
+            <h3 class="highlight-title">Responsive Web</h3>
+            <p class="highlight-desc">Crafting responsive websites that adjust seamlessly to any screen resolution and
+              device.</p>
+          </div>
+
+          <div class="glass-card highlight-box">
+            <div class="highlight-icon">💻</div>
+            <h3 class="highlight-title">Clean Code</h3>
+            <p class="highlight-desc">Writing semantic, maintainable HTML, modern CSS, and organized JavaScript logic.
+            </p>
+          </div>
+
+          <div class="glass-card highlight-box">
+            <div class="highlight-icon">🚀</div>
+            <h3 class="highlight-title">Continuous Growth</h3>
+            <p class="highlight-desc">Always learning and advancing my capabilities across modern development stacks.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       What I Do Section
+       ======================================================================== -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">💼 What I Do</div>
+        <h2 class="section-title">Specialized Services</h2>
+        <p class="section-desc">Delivering tailored digital solutions with an emphasis on usability, aesthetics, and
+          reliability.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1: Web Development -->
+        <div class="glass-card service-card">
+          <div class="service-top">
+            <div class="service-icon-wrapper icon-cyan">🌐</div>
+            <h3 class="service-title">Web Development</h3>
+            <p class="service-desc">
+              I build modern, responsive, and interactive websites using HTML, CSS, and JavaScript, with a focus on
+              clean design and a smooth user experience.
+            </p>
+          </div>
+          <div class="service-features">
+            <div class="service-feature-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Fluid, Mobile-First Responsive Layouts</span>
+            </div>
+            <div class="service-feature-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Semantic HTML5 & Accessible Structure</span>
+            </div>
+            <div class="service-feature-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Interactive Features with Pure JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 2: Mobile App Development -->
+        <div class="glass-card service-card">
+          <div class="service-top">
+            <div class="service-icon-wrapper icon-purple">📱</div>
+            <h3 class="service-title">Mobile App Development</h3>
+            <p class="service-desc">
+              I develop modern mobile applications with a focus on functionality, usability, and a clean user interface.
+            </p>
+          </div>
+          <div class="service-features">
+            <div class="service-feature-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Intuitive Mobile User Interface Design</span>
+            </div>
+            <div class="service-feature-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Smooth Touch Interactions & Screen Flows</span>
+            </div>
+            <div class="service-feature-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Performance and Usability Best Practices</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       My Skills Section
+       ======================================================================== -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">🛠️ My Skills</div>
+        <h2 class="section-title">Skills & Technologies</h2>
+        <p class="section-desc">The primary disciplines and tools I utilize to craft digital products.</p>
+      </div>
+
+      <div class="skills-container">
+        <!-- Two Primary Pillars -->
+        <div class="skills-domains-grid">
+          <div class="glass-card domain-card">
+            <div class="domain-header">
+              <div class="domain-icon">📱</div>
+              <h3 class="domain-title">Mobile App Development</h3>
+            </div>
+            <p class="domain-desc">
+              I am interested in developing modern mobile applications with a focus on usability, performance, and clean
+              design.
+            </p>
+          </div>
+
+          <div class="glass-card domain-card">
+            <div class="domain-header">
+              <div class="domain-icon">🌐</div>
+              <h3 class="domain-title">Web Development</h3>
+            </div>
+            <p class="domain-desc">
+              I create responsive and interactive websites that work across different screen sizes and devices.
+            </p>
+          </div>
+        </div>
+
+        <!-- Technologies Grid -->
+        <div class="glass-card tech-section-card">
+          <h3 class="tech-grid-title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+            Technologies
+          </h3>
+          <div class="tech-cards-grid">
+            <div class="tech-item-card">
+              <div class="tech-item-icon">📄</div>
+              <div class="tech-item-info">
+                <h4>HTML</h4>
+                <p>Semantic & Structure</p>
+              </div>
+            </div>
+
+            <div class="tech-item-card">
+              <div class="tech-item-icon">🎨</div>
+              <div class="tech-item-info">
+                <h4>CSS</h4>
+                <p>Styling & Responsive Layouts</p>
+              </div>
+            </div>
+
+            <div class="tech-item-card">
+              <div class="tech-item-icon">⚡</div>
+              <div class="tech-item-info">
+                <h4>JavaScript</h4>
+                <p>Dynamic Interactivity</p>
+              </div>
+            </div>
+
+            <div class="tech-item-card">
+              <div class="tech-item-icon">📱</div>
+              <div class="tech-item-info">
+                <h4>Mobile App Development</h4>
+                <p>Mobile Interfaces & UX</p>
+              </div>
+            </div>
+
+            <div class="tech-item-card">
+              <div class="tech-item-icon">🌐</div>
+              <div class="tech-item-info">
+                <h4>Web Development</h4>
+                <p>Cross-Device Solutions</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Selected Work (Projects) Section
+       ======================================================================== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">🚀 Selected Work</div>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-desc">A selection of projects demonstrating mobile and web development capabilities.</p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 01 -->
+        <div class="glass-card project-card">
+          <div class="project-preview preview-mobile">
+            <div class="mini-phone-frame">
+              <div class="mini-phone-screen">
+                <div class="mini-box"></div>
+                <div class="mini-line" style="width: 80%;"></div>
+                <div class="mini-line" style="width: 60%;"></div>
+                <div class="mini-box" style="margin-top: auto; height: 14px; background: rgba(56, 189, 248, 0.35);">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-badge">Project 01</div>
+            <h3 class="project-title">Egypt</h3>
+            <p class="project-desc">
+              A mobile application project focused on creating a modern and easy-to-use user experience.
+            </p>
+            <div class="project-techs">
+              <span class="tech-tag">Mobile App Development</span>
+            </div>
+            <a href="file:///C:/Users/aa/OneDrive/Desktop/Form/mian.HTML" class="btn btn-secondary btn-sm btn-block">
+              View Project
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 02 -->
+        <div class="glass-card project-card">
+          <div class="project-preview preview-web">
+            <div class="mini-laptop-frame">
+              <div class="mini-laptop-screen">
+                <div class="mini-nav"></div>
+                <div class="mini-web-grid">
+                  <div class="mini-web-item"></div>
+                  <div class="mini-web-item"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-badge">Project 02</div>
+            <h3 class="project-title">Form</h3>
+            <p class="project-desc">
+              A responsive website designed to provide a clean and modern experience across different devices.
+            </p>
+            <div class="project-techs">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            <a href="file:///C:/Users/aa/OneDrive/Desktop/Form/index.HTML" class="btn btn-secondary btn-sm btn-block">
+              View Project
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 03 -->
+        <div class="glass-card project-card">
+          <div class="project-preview preview-interactive">
+            <div class="mini-interactive-frame">
+              <div class="mini-line" style="width: 50%; height: 4px;"></div>
+              <div class="mini-bars">
+                <div class="bar-col b1"></div>
+                <div class="bar-col b2"></div>
+                <div class="bar-col b3"></div>
+                <div class="bar-col b4"></div>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-badge">Project 03</div>
+            <h3 class="project-title">FOOD</h3>
+            <p class="project-desc">
+              An interactive web project using JavaScript to create dynamic and engaging features.
+            </p>
+            <div class="project-techs">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            <a href="file:///C:/Users/aa/OneDrive/Desktop/Food/Food.HTML" class="btn btn-secondary btn-sm btn-block">
+              View Project
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Testimonials Section
+       ======================================================================== -->
+  <section class="section" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">💬 Testimonials</div>
+        <h2 class="section-title">Collaborator Feedback</h2>
+        <p class="section-desc">Client reviews and feedback on past projects and collaborations.</p>
+      </div>
+
+      <div class="glass-card testimonials-card">
+        <div class="testimonial-quote-icon">“</div>
+        <p class="testimonial-statement">
+          Testimonials from clients and collaborators will be added here as I gain more professional experience and
+          complete more projects.
+        </p>
+        <div class="testimonial-status-pill">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 6 12 12 14 14"></polyline>
+          </svg>
+          Open to New Opportunities & Collaborations
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Contact Me & Let's Work Together
+       ======================================================================== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">📞 Contact Me</div>
+        <h2 class="section-title">🤝 Let's Work Together</h2>
+        <p class="section-desc">
+          I'm always open to connecting, discussing new projects, and exploring opportunities to work together. Have a
+          project idea or want to connect? Feel free to contact me through WhatsApp, LinkedIn, Facebook, or YouTube.
+          Let's build something great together.
+        </p>
+      </div>
+
+      <div class="contact-layout">
+        <!-- Direct Channels List -->
+        <div class="channels-column">
+          <!-- WhatsApp Card -->
+          <a href="https://wa.me/2010406060311" target="_blank" rel="noopener noreferrer"
+            class="glass-card contact-channel-card" id="contactCardWhatsApp">
+            <div class="channel-info-wrapper">
+              <div class="channel-icon icon-wa">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+                  </path>
+                </svg>
+              </div>
+              <div class="channel-meta">
+                <h4>WhatsApp</h4>
+                <p>+20 104 060 6031</p>
+              </div>
+            </div>
+            <div class="channel-arrow">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </div>
+          </a>
+
+          <!-- LinkedIn Card -->
+          <a href="https://www.linkedin.com/in/fares-ayman-ba3aa643/" target="_blank" rel="noopener noreferrer"
+            class="glass-card contact-channel-card" id="contactCardLinkedIn">
+            <div class="channel-info-wrapper">
+              <div class="channel-icon icon-li">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </div>
+              <div class="channel-meta">
+                <h4>LinkedIn</h4>
+                <p>Fares Ayman</p>
+              </div>
+            </div>
+            <div class="channel-arrow">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </div>
+          </a>
+
+          <!-- Facebook Card -->
+          <a href="https://www.facebook.com/fares.ayman.972304" target="_blank" rel="noopener noreferrer"
+            class="glass-card contact-channel-card" id="contactCardFacebook">
+            <div class="channel-info-wrapper">
+              <div class="channel-icon icon-fb">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                </svg>
+              </div>
+              <div class="channel-meta">
+                <h4>Facebook</h4>
+                <p>Fares Ayman</p>
+              </div>
+            </div>
+            <div class="channel-arrow">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </div>
+          </a>
+
+          <!-- YouTube Card -->
+          <a href="https://www.youtube.com/@Fares_Elbadawy00" target="_blank" rel="noopener noreferrer"
+            class="glass-card contact-channel-card" id="contactCardYouTube">
+            <div class="channel-info-wrapper">
+              <div class="channel-icon icon-yt">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z">
+                  </path>
+                  <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+                </svg>
+              </div>
+              <div class="channel-meta">
+                <h4>YouTube</h4>
+                <p>Fares Elbadawy</p>
+              </div>
+            </div>
+            <div class="channel-arrow">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </div>
+          </a>
+        </div>
+
+        <!-- Interactive Direct WhatsApp Messenger Form -->
+        <div class="glass-card quick-message-card">
+          <div class="form-header">
+            <h3 class="form-title">Send a Quick Message</h3>
+            <p class="form-desc">Fill in details to instantly start a conversation with Fares on WhatsApp.</p>
+          </div>
+
+          <form id="quickContactForm">
+            <div class="form-group">
+              <label class="form-label" for="contactName">Your Name</label>
+              <input type="text" id="contactName" class="form-input" placeholder="e.g. John Doe" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contactService">Project Type</label>
+              <select id="contactService" class="form-select">
+                <option value="Mobile App Development">📱 Mobile App Development</option>
+                <option value="Web Development">🌐 Web Development</option>
+                <option value="Full Project Discussion">💼 Full Project Collaboration</option>
+                <option value="General Inquiry">💬 General Inquiry</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contactMessage">Your Message</label>
+              <textarea id="contactMessage" class="form-textarea"
+                placeholder="Describe your project idea or requirements..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-whatsapp btn-block" id="sendMessageBtn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+                </path>
+              </svg>
+              Send Message on WhatsApp
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Footer
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand-title">
+          <span>👨‍💻</span> Fares Ayman
+        </div>
+        <div class="footer-role-text">
+          Mobile App Developer | Web Developer
+        </div>
+        <div class="footer-tech-list">
+          <span>HTML</span>
+          <span class="footer-dot">•</span>
+          <span>CSS</span>
+          <span class="footer-dot">•</span>
+          <span>JavaScript</span>
+          <span class="footer-dot">•</span>
+          <span>Mobile App Development</span>
+          <span class="footer-dot">•</span>
+          <span>Web Development</span>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Fares Ayman. All Rights Reserved.</div>
+        <div>Built with Clean HTML, CSS & JavaScript</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       Project Detail Modal Dialog
+       ======================================================================== -->
+  <div class="modal-overlay" id="projectModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close dialog">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <div class="modal-badge" id="modalBadge">Project Detail</div>
+      <h3 class="modal-title" id="modalTitle">Project Title</h3>
+      <p class="modal-body" id="modalDesc">Project description goes here.</p>
+
+      <div class="project-techs" id="modalTechs" style="margin-bottom: 1.5rem;"></div>
+
+      <h4 style="font-size: 1rem; color: #fff; margin-bottom: 0.75rem; font-weight: 700;">Key Features & Architecture:
+      </h4>
+      <div class="modal-features-list" id="modalFeatures"></div>
+
+      <a href="#" id="modalActionBtn" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path
+            d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+          </path>
+        </svg>
+        Discuss this Project on WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <!-- Back to top button -->
+  <button class="back-to-top" id="backToTop" aria-label="Scroll back to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
