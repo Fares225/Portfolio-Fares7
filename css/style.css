@@ -299,15 +299,16 @@ button, input, textarea, select { font-family: inherit; font-size: inherit; bord
   width: 100%;
   height: var(--header-height);
   z-index: 1000;
-  transition: background var(--tr-base), border var(--tr-base), backdrop-filter var(--tr-base);
-}
-
-.navbar.scrolled {
-  background: rgba(4, 6, 13, 0.88);
+  background: rgba(4, 6, 13, 0.92);
   backdrop-filter: var(--glass-blur);
   -webkit-backdrop-filter: var(--glass-blur);
   border-bottom: 1px solid var(--border-sub);
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
+  transition: background var(--tr-base), border var(--tr-base), backdrop-filter var(--tr-base);
+}
+
+.navbar.scrolled {
+  background: rgba(4, 6, 13, 0.96);
 }
 
 .nav-container {
@@ -377,6 +378,29 @@ button, input, textarea, select { font-family: inherit; font-size: inherit; bord
 .nav-link:hover::after, .nav-link.active::after { width: 100%; }
 
 .nav-cta { display: flex; align-items: center; gap: 1rem; }
+
+/* Mobile Toggle Checkbox (Pure CSS) */
+.mobile-toggle-cb {
+  display: none;
+}
+
+.mobile-toggle-cb:checked ~ .navbar .mobile-drawer {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-toggle-cb:checked ~ .navbar .mobile-toggle span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.mobile-toggle-cb:checked ~ .navbar .mobile-toggle span:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-toggle-cb:checked ~ .navbar .mobile-toggle span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
 
 /* Mobile Toggle */
 .mobile-toggle {
@@ -1219,78 +1243,25 @@ button, input, textarea, select { font-family: inherit; font-size: inherit; bord
   .footer-bottom { flex-direction: column; gap: 0.85rem; text-align: center; }
 }
 
-/* --------------------------------------------------------------------------
-   Project Modal
-   -------------------------------------------------------------------------- */
-.modal-overlay {
-  position: fixed; inset: 0;
-  background: rgba(2, 5, 12, 0.88);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  z-index: 2000;
-  display: flex; align-items: center; justify-content: center;
-  padding: 1.5rem;
-  opacity: 0; visibility: hidden;
-  transition: all var(--tr-base);
-}
-
-.modal-overlay.active { opacity: 1; visibility: visible; }
-
-.modal-dialog {
-  background: var(--bg-surface);
-  border: 1px solid rgba(79, 195, 247, 0.2);
-  border-radius: var(--radius-lg);
-  max-width: 580px; width: 100%;
-  max-height: 88vh; overflow-y: auto;
-  box-shadow: 0 30px 60px rgba(0,0,0,0.8), 0 0 30px rgba(30,64,160,0.25);
-  padding: 2.25rem; position: relative;
-  transform: scale(0.95);
-  transition: transform var(--tr-base);
-}
-
-.modal-overlay.active .modal-dialog { transform: scale(1); }
-
-.modal-close-btn {
-  position: absolute; top: 1.25rem; right: 1.25rem;
-  width: 34px; height: 34px; border-radius: 50%;
-  background: rgba(79, 195, 247, 0.07);
-  border: 1px solid rgba(79, 195, 247, 0.2);
-  color: var(--text-mid); cursor: pointer;
-  display: flex; align-items: center; justify-content: center;
-  transition: var(--tr-fast);
-}
-
-.modal-close-btn:hover { background: rgba(79,195,247,0.15); color: #fff; }
-
-.modal-badge { font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent); margin-bottom: 0.4rem; }
-.modal-title { font-size: 1.6rem; font-weight: 700; color: var(--text-white); margin-bottom: 0.85rem; }
-.modal-body { color: var(--text-mid); font-size: 0.96rem; line-height: 1.75; margin-bottom: 1.5rem; }
-
-.modal-features-list { display: flex; flex-direction: column; gap: 0.55rem; margin-bottom: 1.75rem; }
-
-.modal-feature-item {
-  display: flex; align-items: center; gap: 0.55rem;
-  font-size: 0.9rem; color: var(--text-mid);
-}
-
-/* Back-to-top */
+/* Back-to-top (Pure HTML/CSS) */
 .back-to-top {
   position: fixed; bottom: 24px; right: 24px;
   width: 44px; height: 44px; border-radius: 50%;
   background: var(--royal-800);
-  border: 1px solid rgba(79, 195, 247, 0.2);
-  color: var(--text-mid);
+  border: 1px solid rgba(79, 195, 247, 0.25);
+  color: var(--silver-200);
   display: flex; align-items: center; justify-content: center;
   cursor: pointer;
-  opacity: 0; visibility: hidden;
+  opacity: 0.85; visibility: visible;
   transition: all var(--tr-base);
   z-index: 900;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
 }
 
-.back-to-top.visible { opacity: 1; visibility: visible; }
-
 .back-to-top:hover {
+  opacity: 1;
   background: var(--accent);
   color: var(--bg-darkest);
-  box-shadow: 0 6px 20px rgba(79,195,247,0.35);
+  box-shadow: 0 6px 20px rgba(79, 195, 247, 0.4);
+  transform: translateY(-3px);
 }
